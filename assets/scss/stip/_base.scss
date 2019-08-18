@@ -7,7 +7,7 @@ body {
 
 html {
     font-family: $sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     overflow-y: auto;
 }
 
@@ -28,7 +28,9 @@ a {
 
 h1 {
     font-size: 9rem;
-    font-weight: 100;
+    font-weight: 900;
+    -webkit-text-stroke: 5px white;
+    -webkit-text-fill-color: $color-inner-circle;
 
     @media screen and (max-width: $break-large) {
         font-size: 6rem;
@@ -36,8 +38,8 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
-    font-weight: 100;
+    font-size: 4rem;
+    font-weight: 300;
 }
 
 p {
@@ -48,7 +50,7 @@ p {
 
 img.portrait {
     border-radius: 50%;
-    border: $portrait-border-width solid $color-foreground;
+    border: $portrait-border-width solid $color-inner-circle;
     width: $portrait-size;
     height: $portrait-size;
 }
